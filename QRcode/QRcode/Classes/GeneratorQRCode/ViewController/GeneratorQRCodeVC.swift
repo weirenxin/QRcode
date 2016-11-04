@@ -7,29 +7,28 @@
 //
 
 import UIKit
+import CoreImage
 
 class GeneratorQRCodeVC: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    @IBOutlet weak var qrCodeImageView: UIImageView!
+    @IBOutlet weak var inputTV: UITextView!
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func generateAction(_ sender: UIButton) {
+        
+        let filter = CIFilter(name: "CIQRCodeGenerator")
+        filter?.setDefaults()
+        
+        let data = "456".data(using: .utf8)
+        filter?.setValue(data, forKey: "inputMessage")
+        
+        var image = filter?.outputImage
+        
+        let transform = CGAffineTransform(scaleX: 20, y: 20)
+        image = image?.applying(transform)
+        
+        let resultImage = UIImage(ciImage: image!)
+        print(resultImage.size)
+        qrCodeImageView.image = resultImage;
     }
-    */
-
 }
