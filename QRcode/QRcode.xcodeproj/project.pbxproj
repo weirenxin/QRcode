@@ -26,6 +26,8 @@
 		F0B44F281DCB68B6008A54EB /* DetectorQRCodeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B44F271DCB68B6008A54EB /* DetectorQRCodeVC.storyboard */; };
 		F0B44F2A1DCB68CB008A54EB /* ScanQRCodeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B44F291DCB68CB008A54EB /* ScanQRCodeVC.storyboard */; };
 		F0B44F2C1DCB6934008A54EB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0B44F2B1DCB6934008A54EB /* Info.plist */; };
+		F0B44F2E1DCC6C1A008A54EB /* erweima.png in Resources */ = {isa = PBXBuildFile; fileRef = F0B44F2D1DCC6C1A008A54EB /* erweima.png */; };
+		F0B44F301DCC6F1C008A54EB /* erweima2.png in Resources */ = {isa = PBXBuildFile; fileRef = F0B44F2F1DCC6F1C008A54EB /* erweima2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		F0B44F271DCB68B6008A54EB /* DetectorQRCodeVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetectorQRCodeVC.storyboard; sourceTree = "<group>"; };
 		F0B44F291DCB68CB008A54EB /* ScanQRCodeVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ScanQRCodeVC.storyboard; sourceTree = "<group>"; };
 		F0B44F2B1DCB6934008A54EB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = QRcode/Info.plist; sourceTree = "<group>"; };
+		F0B44F2D1DCC6C1A008A54EB /* erweima.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = erweima.png; sourceTree = "<group>"; };
+		F0B44F2F1DCC6F1C008A54EB /* erweima2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = erweima2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +273,8 @@
 		F0B44F171DCB686F008A54EB /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				F0B44F2F1DCC6F1C008A54EB /* erweima2.png */,
+				F0B44F2D1DCC6C1A008A54EB /* erweima.png */,
 				F0B44F181DCB686F008A54EB /* erha.png */,
 				F0B44F191DCB686F008A54EB /* QRCode */,
 				F0B44F1D1DCB686F008A54EB /* qrcode_for_gh_1b75116a54aa_430.jpg */,
@@ -401,9 +407,11 @@
 				F0B44F211DCB686F008A54EB /* qrcode_scanline_qrcode@2x.png in Resources */,
 				F0B44F261DCB689D008A54EB /* GeneratorQRCodeVC.storyboard in Resources */,
 				F0B44F221DCB686F008A54EB /* qrcode_scanline_qrcode@3x.png in Resources */,
+				F0B44F2E1DCC6C1A008A54EB /* erweima.png in Resources */,
 				F0B44F241DCB686F008A54EB /* shulan.jpg in Resources */,
 				F0B44F2A1DCB68CB008A54EB /* ScanQRCodeVC.storyboard in Resources */,
 				F0B44F1F1DCB686F008A54EB /* erha.png in Resources */,
+				F0B44F301DCC6F1C008A54EB /* erweima2.png in Resources */,
 				F0B44F281DCB68B6008A54EB /* DetectorQRCodeVC.storyboard in Resources */,
 				F0B44EDA1DCB6491008A54EB /* LaunchScreen.storyboard in Resources */,
 				F0B44ED71DCB6491008A54EB /* Assets.xcassets in Resources */,
@@ -687,6 +695,7 @@
 				F0B44EF61DCB6491008A54EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0B44EF71DCB6491008A54EB /* Build configuration list for PBXNativeTarget "QRcodeTests" */ = {
 			isa = XCConfigurationList;
@@ -695,6 +704,7 @@
 				F0B44EF91DCB6491008A54EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0B44EFA1DCB6491008A54EB /* Build configuration list for PBXNativeTarget "QRcodeUITests" */ = {
 			isa = XCConfigurationList;
@@ -703,6 +713,7 @@
 				F0B44EFC1DCB6491008A54EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
