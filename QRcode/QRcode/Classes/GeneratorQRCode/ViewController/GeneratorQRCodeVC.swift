@@ -15,9 +15,9 @@ class GeneratorQRCodeVC: UIViewController {
     @IBOutlet weak var inputTV: UITextView!
     
     @IBAction func generateAction(_ sender: UIButton) {
-        //setupQRCode()
+        setupQRCode()
         
-        setupCustomQRCode()
+        //setupCustomQRCode()
     }
     
     // 0.
@@ -26,13 +26,14 @@ class GeneratorQRCodeVC: UIViewController {
         let filter = CIFilter(name: "CIQRCodeGenerator")
         filter?.setDefaults()
         
-        // 2.设置滤镜数据
-        let data = "456".data(using: .utf8)
+        // 2.设置滤镜数据 "inputMessage" 固定key
+        let data = "https://www.baidu.com".data(using: .utf8)
         filter?.setValue(data, forKey: "inputMessage")
         
         // 3.获取结果图片
         var image = filter?.outputImage
         
+        // scale 倍数
         let transform = CGAffineTransform(scaleX: 20, y: 20)
         image = image?.applying(transform)
         
@@ -47,7 +48,7 @@ class GeneratorQRCodeVC: UIViewController {
 extension GeneratorQRCodeVC {
     fileprivate func setupCustomQRCode() {
         
-        let inputStr = inputTV.text ?? ""
+        let inputStr = inputTV.text ?? "https://www.baidu.com"
         
         let filter = CIFilter(name: "CIQRCodeGenerator")
         filter?.setDefaults()
@@ -55,6 +56,13 @@ extension GeneratorQRCodeVC {
         let data = inputStr.data(using: .utf8)
         filter?.setValue(data, forKey: "inputMessage")
         
+        // 前景图片设置的前提：具备纠错率
+        // 可以根据其他部分，计算出遮挡部分：保证三个角不能被遮挡
+        // 纠错率：inputCorrectionLevel
+        // L ： 7%的字码可被修正
+        // M ： 15%
+        // Q ： 25%
+        // H ： 30%
         // 设置二维码纠错率
         filter?.setValue("M", forKey: "inputCorrectionLevel")
         

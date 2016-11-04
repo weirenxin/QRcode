@@ -10,26 +10,33 @@ import UIKit
 
 class ScanQRCodeVC: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var scanBackView: UIImageView!
+    @IBOutlet weak var scanView: UIImageView!
+    @IBOutlet weak var scanViewBottomConstraint: NSLayoutConstraint!
+    
+    @IBAction func startAction(_ sender: UIButton) {
+        startAnimation()
+        
     }
+    @IBAction func stopAction(_ sender: UIButton) {
+        removeAnimation()
+        
+    }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+extension ScanQRCodeVC {
+    fileprivate func startAnimation() {
+        scanViewBottomConstraint.constant = scanBackView.frame.size.height
+        view.layoutIfNeeded()
+        
+        scanViewBottomConstraint.constant = -scanBackView.frame.size.height
+        UIView.animate(withDuration: 1, animations:{
+            UIView.setAnimationRepeatCount(MAXFLOAT)
+            self.view.layoutIfNeeded()
+        });
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    fileprivate func removeAnimation() {
+        scanView.layer.removeAllAnimations()
     }
-    */
-
 }

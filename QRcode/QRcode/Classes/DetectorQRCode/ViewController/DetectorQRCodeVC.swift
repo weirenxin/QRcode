@@ -26,6 +26,8 @@ class DetectorQRCodeVC: UIViewController {
         let imageCI = CIImage(image: image!)
         
         // 1.创建一个二维码探测器
+        // CIDetectorTypeQRCode : 识别类型
+        // CIDetectorAccuracy : 识别率
         let dector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: [CIDetectorAccuracy: CIDetectorAccuracyHigh])
         
         // 2.直接探测二维码特征
@@ -73,7 +75,7 @@ extension DetectorQRCodeVC {
         //绘制大图
         image.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         
-        // 转换坐标系
+        // 转换坐标系 上下颠倒
         let context = UIGraphicsGetCurrentContext()
         context?.scaleBy(x: 1, y: -1)
         context?.translateBy(x: 0, y: -size.height)
