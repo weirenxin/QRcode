@@ -80,7 +80,7 @@
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="scanBackView" destination="0a6-5J-jXx" id="iV6-Fj-pGf"/>
+                        <outlet property="scanBackView" destination="o5P-Ec-7vX" id="XQg-QM-NCk"/>
                         <outlet property="scanView" destination="gmv-KB-3Mk" id="1kr-3Q-gw6"/>
                         <outlet property="scanViewBottomConstraint" destination="a3X-23-Fhi" id="xMd-sG-G1K"/>
                     </connections>

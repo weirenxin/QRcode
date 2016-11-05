@@ -11,7 +11,7 @@ import AVFoundation
 
 class ScanQRCodeVC: UIViewController {
 
-    @IBOutlet weak var scanBackView: UIImageView!
+    @IBOutlet weak var scanBackView: UIView!
     @IBOutlet weak var scanView: UIImageView!
     @IBOutlet weak var scanViewBottomConstraint: NSLayoutConstraint!
     
