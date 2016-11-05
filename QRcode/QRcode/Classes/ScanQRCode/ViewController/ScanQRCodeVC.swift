@@ -20,7 +20,12 @@ class ScanQRCodeVC: UIViewController {
     
     @IBAction func startAction(_ sender: UIButton) {
         startAnimation()
-        startScan()
+        //startScan()
+        
+        QRCodeTool.shareInstance.setRectInterest(scanBackView.frame)
+        QRCodeTool.shareInstance.scanQRCode(view, true, resultBlock:{ (resultStrs) in
+            print(resultStrs)
+        });
     }
     @IBAction func stopAction(_ sender: UIButton) {
         removeAnimation()

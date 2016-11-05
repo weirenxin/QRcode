@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F05714321DCDFC8600E3F50B /* QRCodeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05714311DCDFC8600E3F50B /* QRCodeTool.swift */; };
 		F0B44ED51DCB6491008A54EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B44ED31DCB6491008A54EB /* Main.storyboard */; };
 		F0B44ED71DCB6491008A54EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B44ED61DCB6491008A54EB /* Assets.xcassets */; };
 		F0B44EDA1DCB6491008A54EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B44ED81DCB6491008A54EB /* LaunchScreen.storyboard */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F05714311DCDFC8600E3F50B /* QRCodeTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeTool.swift; sourceTree = "<group>"; };
 		F0B44ECC1DCB6491008A54EB /* QRcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0B44ED41DCB6491008A54EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0B44ED61DCB6491008A54EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 			children = (
 				F0B44F071DCB6730008A54EB /* AppDelegate.swift */,
 				F0B44ED31DCB6491008A54EB /* Main.storyboard */,
+				F05714311DCDFC8600E3F50B /* QRCodeTool.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F05714321DCDFC8600E3F50B /* QRCodeTool.swift in Sources */,
 				F0B44F141DCB67B3008A54EB /* DetectorQRCodeVC.swift in Sources */,
 				F0B44F161DCB67C0008A54EB /* ScanQRCodeVC.swift in Sources */,
 				F0B44F121DCB67A5008A54EB /* GeneratorQRCodeVC.swift in Sources */,

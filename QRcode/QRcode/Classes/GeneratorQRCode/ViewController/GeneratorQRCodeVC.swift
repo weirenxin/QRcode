@@ -15,9 +15,12 @@ class GeneratorQRCodeVC: UIViewController {
     @IBOutlet weak var inputTV: UITextView!
     
     @IBAction func generateAction(_ sender: UIButton) {
-        setupQRCode()
+        //setupQRCode()
         
         //setupCustomQRCode()
+        
+        let image = QRCodeTool.generatorQRCode(inputTV.text ?? "", centerImage: UIImage(named: "shulan.jpg"))
+        self.qrCodeImageView.image = image
     }
     
     // 0.
