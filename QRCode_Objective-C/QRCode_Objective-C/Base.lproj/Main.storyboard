@@ -32,7 +32,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="iF2-OS-IqB" kind="show" id="zFe-4H-bmm"/>
+                                    <segue destination="3XS-yb-xYr" kind="show" id="zFe-4H-bmm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkj-4W-MtD">
@@ -42,7 +42,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Zxe-Xl-APE" kind="show" id="Ke2-E0-gSw"/>
+                                    <segue destination="zAw-WR-XE8" kind="show" id="Ke2-E0-gSw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPb-yI-Q71">
@@ -52,7 +52,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="NPk-CQ-zwG" kind="show" id="8jl-dd-EHV"/>
+                                    <segue destination="RHk-sR-erc" kind="show" id="8jl-dd-EHV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -76,60 +76,6 @@
             </objects>
             <point key="canvasLocation" x="972" y="37.331334332833585"/>
         </scene>
-        <!--二维码-->
-        <scene sceneID="Vr4-17-nYT">
-            <objects>
-                <viewController title="二维码" id="Zxe-Xl-APE" customClass="CustomQRCodeVC" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3PK-tf-Dvc"/>
-                        <viewControllerLayoutGuide type="bottom" id="c1J-bL-oIZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="CZ3-aO-F9S">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cbb-WO-3DL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="10" y="628"/>
-        </scene>
-        <!--生成二维码-->
-        <scene sceneID="eOt-6h-7OB">
-            <objects>
-                <viewController title="生成二维码" id="NPk-CQ-zwG" customClass="GeneratorQRCodeVC" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KpU-o4-a2l"/>
-                        <viewControllerLayoutGuide type="bottom" id="mXN-HA-B1U"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="CLM-bS-96T">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CF1-Hg-EiZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1720.8" y="136.28185907046478"/>
-        </scene>
-        <!--扫描二维码-->
-        <scene sceneID="jsB-7o-Eph">
-            <objects>
-                <viewController title="扫描二维码" id="iF2-OS-IqB" customClass="ScanQRCodeVC" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IzK-RJ-gej"/>
-                        <viewControllerLayoutGuide type="bottom" id="rvP-sP-YCu"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="U8Z-3W-N8n">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CGM-z1-4zc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1592.8" y="613.94302848575717"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xle-Sa-kCF">
             <objects>
@@ -147,6 +93,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jqp-yS-SDU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-639.20000000000005" y="35.532233883058474"/>
+        </scene>
+        <!--GeneratorQRCodeVC-->
+        <scene sceneID="9Vp-8t-WIh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GeneratorQRCodeVC" id="RHk-sR-erc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TE2-5c-UEg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1720.8" y="136.28185907046478"/>
+        </scene>
+        <!--ScanQRCodeVC-->
+        <scene sceneID="iPj-dM-tHZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ScanQRCodeVC" id="3XS-yb-xYr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iRZ-m7-FB4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1592.8" y="613.94302848575717"/>
+        </scene>
+        <!--CustomQRCodeVC-->
+        <scene sceneID="uhN-EF-ACX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CustomQRCodeVC" id="zAw-WR-XE8" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khq-lO-zd4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="628"/>
         </scene>
     </scenes>
 </document>

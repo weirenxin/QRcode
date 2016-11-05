@@ -20,6 +20,10 @@
 		F057141E1DCDA99D00E3F50B /* GeneratorQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F057141D1DCDA99D00E3F50B /* GeneratorQRCodeVC.m */; };
 		F05714211DCDA9AF00E3F50B /* ScanQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F05714201DCDA9AF00E3F50B /* ScanQRCodeVC.m */; };
 		F05714241DCDA9C300E3F50B /* CustomQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F05714231DCDA9C300E3F50B /* CustomQRCodeVC.m */; };
+		F05714271DCDAA8400E3F50B /* GeneratorQRCodeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F05714251DCDAA8400E3F50B /* GeneratorQRCodeVC.storyboard */; };
+		F05714291DCDAA9700E3F50B /* ScanQRCodeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F05714281DCDAA9700E3F50B /* ScanQRCodeVC.storyboard */; };
+		F057142C1DCDAAB000E3F50B /* CustomQRCodeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F057142A1DCDAAB000E3F50B /* CustomQRCodeVC.storyboard */; };
+		F05714301DCDB55400E3F50B /* XMGQRCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F057142F1DCDB55400E3F50B /* XMGQRCodeTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,12 @@
 		F05714201DCDA9AF00E3F50B /* ScanQRCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRCodeVC.m; sourceTree = "<group>"; };
 		F05714221DCDA9C300E3F50B /* CustomQRCodeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomQRCodeVC.h; sourceTree = "<group>"; };
 		F05714231DCDA9C300E3F50B /* CustomQRCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomQRCodeVC.m; sourceTree = "<group>"; };
+		F05714261DCDAA8400E3F50B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GeneratorQRCodeVC.storyboard; sourceTree = "<group>"; };
+		F05714281DCDAA9700E3F50B /* ScanQRCodeVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ScanQRCodeVC.storyboard; sourceTree = "<group>"; };
+		F057142B1DCDAAB000E3F50B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CustomQRCodeVC.storyboard; sourceTree = "<group>"; };
+		F057142D1DCDB55400E3F50B /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		F057142E1DCDB55400E3F50B /* XMGQRCodeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGQRCodeTool.h; sourceTree = "<group>"; };
+		F057142F1DCDB55400E3F50B /* XMGQRCodeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGQRCodeTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +131,13 @@
 				F05714201DCDA9AF00E3F50B /* ScanQRCodeVC.m */,
 				F05714221DCDA9C300E3F50B /* CustomQRCodeVC.h */,
 				F05714231DCDA9C300E3F50B /* CustomQRCodeVC.m */,
+				F057142D1DCDB55400E3F50B /* Singleton.h */,
+				F057142E1DCDB55400E3F50B /* XMGQRCodeTool.h */,
+				F057142F1DCDB55400E3F50B /* XMGQRCodeTool.m */,
 				F05713EC1DCDA77100E3F50B /* Main.storyboard */,
+				F057142A1DCDAAB000E3F50B /* CustomQRCodeVC.storyboard */,
+				F05714281DCDAA9700E3F50B /* ScanQRCodeVC.storyboard */,
+				F05714251DCDAA8400E3F50B /* GeneratorQRCodeVC.storyboard */,
 				F05713EF1DCDA77100E3F50B /* Assets.xcassets */,
 				F05713F11DCDA77100E3F50B /* LaunchScreen.storyboard */,
 				F05713F41DCDA77100E3F50B /* Info.plist */,
@@ -270,9 +286,12 @@
 			files = (
 				F05713F31DCDA77100E3F50B /* LaunchScreen.storyboard in Resources */,
 				F05713F01DCDA77100E3F50B /* Assets.xcassets in Resources */,
+				F05714291DCDAA9700E3F50B /* ScanQRCodeVC.storyboard in Resources */,
 				F05713EE1DCDA77100E3F50B /* Main.storyboard in Resources */,
 				F05714181DCDA7DF00E3F50B /* qrcode_for_gh_1b75116a54aa_430.jpg in Resources */,
 				F05714191DCDA7DF00E3F50B /* shulan.jpg in Resources */,
+				F057142C1DCDAAB000E3F50B /* CustomQRCodeVC.storyboard in Resources */,
+				F05714271DCDAA8400E3F50B /* GeneratorQRCodeVC.storyboard in Resources */,
 				F057141B1DCDA7E600E3F50B /* erha.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +321,7 @@
 				F05714211DCDA9AF00E3F50B /* ScanQRCodeVC.m in Sources */,
 				F057141E1DCDA99D00E3F50B /* GeneratorQRCodeVC.m in Sources */,
 				F05713E51DCDA77100E3F50B /* main.m in Sources */,
+				F05714301DCDB55400E3F50B /* XMGQRCodeTool.m in Sources */,
 				F05714241DCDA9C300E3F50B /* CustomQRCodeVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +374,22 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		F05714251DCDAA8400E3F50B /* GeneratorQRCodeVC.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F05714261DCDAA8400E3F50B /* Base */,
+			);
+			name = GeneratorQRCodeVC.storyboard;
+			sourceTree = "<group>";
+		};
+		F057142A1DCDAAB000E3F50B /* CustomQRCodeVC.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F057142B1DCDAAB000E3F50B /* Base */,
+			);
+			name = CustomQRCodeVC.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -397,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -438,7 +474,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -451,6 +487,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2YSL4FU435;
 				INFOPLIST_FILE = "QRCode_Objective-C/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wrx.QRCode-Objective-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -463,6 +500,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2YSL4FU435;
 				INFOPLIST_FILE = "QRCode_Objective-C/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wrx.QRCode-Objective-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
