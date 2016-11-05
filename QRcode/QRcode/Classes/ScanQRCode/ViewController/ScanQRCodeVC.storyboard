@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,11 +22,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZo-rf-p5A">
-                                <rect key="frame" x="188" y="527.5" width="109" height="40"/>
+                                <rect key="frame" x="187" y="637" width="100" height="30"/>
                                 <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="eTK-Xu-KqE"/>
-                                </constraints>
                                 <state key="normal" title="暂停">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -36,11 +32,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arr-8o-Qtc">
-                                <rect key="frame" x="79" y="527.5" width="109" height="40"/>
+                                <rect key="frame" x="87" y="637" width="100" height="30"/>
                                 <color key="backgroundColor" red="0.36470588240000001" green="0.64705882349999999" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="yox-Dz-lyf"/>
-                                </constraints>
                                 <state key="normal" title="开始">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -48,48 +41,48 @@
                                     <action selector="startAction:" destination="B9d-Iv-MQR" eventType="touchUpInside" id="iRG-BP-wLa"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o5P-Ec-7vX">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o5P-Ec-7vX">
                                 <rect key="frame" x="87" y="234" width="200" height="200"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_border.png" translatesAutoresizingMaskIntoConstraints="NO" id="0a6-5J-jXx">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_border" translatesAutoresizingMaskIntoConstraints="NO" id="0a6-5J-jXx">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_scanline_qrcode.png" translatesAutoresizingMaskIntoConstraints="NO" id="gmv-KB-3Mk">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_scanline_qrcode" translatesAutoresizingMaskIntoConstraints="NO" id="gmv-KB-3Mk">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="gmv-KB-3Mk" firstAttribute="leading" secondItem="o5P-Ec-7vX" secondAttribute="leading" id="4Xb-Y6-5Mt"/>
                                     <constraint firstAttribute="height" constant="200" id="6aK-px-juv"/>
-                                    <constraint firstAttribute="bottom" secondItem="0a6-5J-jXx" secondAttribute="bottom" id="82I-iv-Maa"/>
-                                    <constraint firstItem="gmv-KB-3Mk" firstAttribute="height" secondItem="0a6-5J-jXx" secondAttribute="height" id="8fE-7y-1g0"/>
-                                    <constraint firstItem="0a6-5J-jXx" firstAttribute="leading" secondItem="o5P-Ec-7vX" secondAttribute="leading" id="Wsf-rs-zlP"/>
-                                    <constraint firstAttribute="bottom" secondItem="gmv-KB-3Mk" secondAttribute="bottom" id="aP3-gG-bvF"/>
-                                    <constraint firstAttribute="trailing" secondItem="0a6-5J-jXx" secondAttribute="trailing" id="hEV-R9-c3f"/>
-                                    <constraint firstItem="gmv-KB-3Mk" firstAttribute="leading" secondItem="o5P-Ec-7vX" secondAttribute="leading" id="jX1-yx-1rR"/>
-                                    <constraint firstItem="gmv-KB-3Mk" firstAttribute="width" secondItem="0a6-5J-jXx" secondAttribute="width" id="nFd-Oc-9Su"/>
-                                    <constraint firstItem="0a6-5J-jXx" firstAttribute="top" secondItem="o5P-Ec-7vX" secondAttribute="top" id="yL4-Hw-9MT"/>
+                                    <constraint firstAttribute="trailing" secondItem="0a6-5J-jXx" secondAttribute="trailing" id="9jF-eH-Lps"/>
+                                    <constraint firstItem="gmv-KB-3Mk" firstAttribute="height" secondItem="0a6-5J-jXx" secondAttribute="height" id="HER-Kg-Mkv"/>
+                                    <constraint firstItem="0a6-5J-jXx" firstAttribute="leading" secondItem="o5P-Ec-7vX" secondAttribute="leading" id="RFP-Px-AUB"/>
+                                    <constraint firstItem="0a6-5J-jXx" firstAttribute="top" secondItem="o5P-Ec-7vX" secondAttribute="top" id="YP0-dm-fca"/>
+                                    <constraint firstItem="gmv-KB-3Mk" firstAttribute="width" secondItem="0a6-5J-jXx" secondAttribute="width" id="ZxR-bz-6aM"/>
+                                    <constraint firstAttribute="bottom" secondItem="gmv-KB-3Mk" secondAttribute="bottom" id="a3X-23-Fhi"/>
+                                    <constraint firstAttribute="bottom" secondItem="0a6-5J-jXx" secondAttribute="bottom" id="vab-0i-2eH"/>
                                     <constraint firstAttribute="width" constant="200" id="zKV-7P-9Am"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="arr-8o-Qtc" firstAttribute="leading" secondItem="gmv-KB-3Mk" secondAttribute="leading" id="1gT-sp-GVd"/>
+                            <constraint firstItem="YZo-rf-p5A" firstAttribute="leading" secondItem="arr-8o-Qtc" secondAttribute="trailing" id="5NW-K1-eMu"/>
                             <constraint firstItem="o5P-Ec-7vX" firstAttribute="centerY" secondItem="Lyz-uz-uxo" secondAttribute="centerY" id="5U8-Vg-P0B"/>
-                            <constraint firstItem="arr-8o-Qtc" firstAttribute="top" secondItem="YZo-rf-p5A" secondAttribute="top" id="8GO-LC-mMB"/>
+                            <constraint firstItem="YZo-rf-p5A" firstAttribute="trailing" secondItem="gmv-KB-3Mk" secondAttribute="trailing" id="60S-v0-3xs"/>
+                            <constraint firstItem="YZo-rf-p5A" firstAttribute="width" secondItem="arr-8o-Qtc" secondAttribute="width" id="6vE-dG-Phh"/>
                             <constraint firstItem="o5P-Ec-7vX" firstAttribute="centerX" secondItem="Lyz-uz-uxo" secondAttribute="centerX" id="CWE-Ma-ZLO"/>
-                            <constraint firstItem="YZo-rf-p5A" firstAttribute="width" secondItem="arr-8o-Qtc" secondAttribute="width" id="hae-K1-Og8"/>
-                            <constraint firstItem="YZo-rf-p5A" firstAttribute="top" secondItem="o5P-Ec-7vX" secondAttribute="bottom" constant="93.5" id="plc-iC-hX6"/>
-                            <constraint firstItem="YZo-rf-p5A" firstAttribute="leading" secondItem="arr-8o-Qtc" secondAttribute="trailing" id="q7N-tT-jq3"/>
-                            <constraint firstItem="arr-8o-Qtc" firstAttribute="leading" secondItem="Lyz-uz-uxo" secondAttribute="leadingMargin" constant="63" id="xhV-2X-Ais"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="YZo-rf-p5A" secondAttribute="trailing" constant="62" id="yd7-0X-xJF"/>
+                            <constraint firstItem="Ob9-dT-fE8" firstAttribute="top" secondItem="YZo-rf-p5A" secondAttribute="bottom" id="gAS-9k-AOh"/>
+                            <constraint firstItem="Ob9-dT-fE8" firstAttribute="top" secondItem="arr-8o-Qtc" secondAttribute="bottom" id="zWg-vJ-8ZK"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="scanBackView" destination="0a6-5J-jXx" id="iV6-Fj-pGf"/>
                         <outlet property="scanView" destination="gmv-KB-3Mk" id="1kr-3Q-gw6"/>
-                        <outlet property="scanViewBottomConstraint" destination="aP3-gG-bvF" id="Ufm-vE-Toq"/>
+                        <outlet property="scanViewBottomConstraint" destination="a3X-23-Fhi" id="xMd-sG-G1K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exc-gf-q13" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -98,7 +91,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="qrcode_border.png" width="51" height="51"/>
-        <image name="qrcode_scanline_qrcode.png" width="218" height="170"/>
+        <image name="qrcode_border" width="51" height="51"/>
+        <image name="qrcode_scanline_qrcode" width="218" height="170"/>
     </resources>
 </document>

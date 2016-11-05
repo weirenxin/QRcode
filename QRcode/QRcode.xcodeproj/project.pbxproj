@@ -17,9 +17,6 @@
 		F0B44F141DCB67B3008A54EB /* DetectorQRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B44F131DCB67B3008A54EB /* DetectorQRCodeVC.swift */; };
 		F0B44F161DCB67C0008A54EB /* ScanQRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B44F151DCB67C0008A54EB /* ScanQRCodeVC.swift */; };
 		F0B44F1F1DCB686F008A54EB /* erha.png in Resources */ = {isa = PBXBuildFile; fileRef = F0B44F181DCB686F008A54EB /* erha.png */; };
-		F0B44F201DCB686F008A54EB /* qrcode_border@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0B44F1A1DCB686F008A54EB /* qrcode_border@2x.png */; };
-		F0B44F211DCB686F008A54EB /* qrcode_scanline_qrcode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0B44F1B1DCB686F008A54EB /* qrcode_scanline_qrcode@2x.png */; };
-		F0B44F221DCB686F008A54EB /* qrcode_scanline_qrcode@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0B44F1C1DCB686F008A54EB /* qrcode_scanline_qrcode@3x.png */; };
 		F0B44F231DCB686F008A54EB /* qrcode_for_gh_1b75116a54aa_430.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F0B44F1D1DCB686F008A54EB /* qrcode_for_gh_1b75116a54aa_430.jpg */; };
 		F0B44F241DCB686F008A54EB /* shulan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F0B44F1E1DCB686F008A54EB /* shulan.jpg */; };
 		F0B44F261DCB689D008A54EB /* GeneratorQRCodeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B44F251DCB689D008A54EB /* GeneratorQRCodeVC.storyboard */; };
@@ -63,9 +60,6 @@
 		F0B44F131DCB67B3008A54EB /* DetectorQRCodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectorQRCodeVC.swift; sourceTree = "<group>"; };
 		F0B44F151DCB67C0008A54EB /* ScanQRCodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanQRCodeVC.swift; sourceTree = "<group>"; };
 		F0B44F181DCB686F008A54EB /* erha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = erha.png; sourceTree = "<group>"; };
-		F0B44F1A1DCB686F008A54EB /* qrcode_border@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_border@2x.png"; sourceTree = "<group>"; };
-		F0B44F1B1DCB686F008A54EB /* qrcode_scanline_qrcode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scanline_qrcode@2x.png"; sourceTree = "<group>"; };
-		F0B44F1C1DCB686F008A54EB /* qrcode_scanline_qrcode@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scanline_qrcode@3x.png"; sourceTree = "<group>"; };
 		F0B44F1D1DCB686F008A54EB /* qrcode_for_gh_1b75116a54aa_430.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = qrcode_for_gh_1b75116a54aa_430.jpg; sourceTree = "<group>"; };
 		F0B44F1E1DCB686F008A54EB /* shulan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shulan.jpg; sourceTree = "<group>"; };
 		F0B44F251DCB689D008A54EB /* GeneratorQRCodeVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GeneratorQRCodeVC.storyboard; sourceTree = "<group>"; };
@@ -276,21 +270,10 @@
 				F0B44F2F1DCC6F1C008A54EB /* erweima2.png */,
 				F0B44F2D1DCC6C1A008A54EB /* erweima.png */,
 				F0B44F181DCB686F008A54EB /* erha.png */,
-				F0B44F191DCB686F008A54EB /* QRCode */,
 				F0B44F1D1DCB686F008A54EB /* qrcode_for_gh_1b75116a54aa_430.jpg */,
 				F0B44F1E1DCB686F008A54EB /* shulan.jpg */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		F0B44F191DCB686F008A54EB /* QRCode */ = {
-			isa = PBXGroup;
-			children = (
-				F0B44F1A1DCB686F008A54EB /* qrcode_border@2x.png */,
-				F0B44F1B1DCB686F008A54EB /* qrcode_scanline_qrcode@2x.png */,
-				F0B44F1C1DCB686F008A54EB /* qrcode_scanline_qrcode@3x.png */,
-			);
-			path = QRCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,10 +386,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0B44F201DCB686F008A54EB /* qrcode_border@2x.png in Resources */,
-				F0B44F211DCB686F008A54EB /* qrcode_scanline_qrcode@2x.png in Resources */,
 				F0B44F261DCB689D008A54EB /* GeneratorQRCodeVC.storyboard in Resources */,
-				F0B44F221DCB686F008A54EB /* qrcode_scanline_qrcode@3x.png in Resources */,
 				F0B44F2E1DCC6C1A008A54EB /* erweima.png in Resources */,
 				F0B44F241DCB686F008A54EB /* shulan.jpg in Resources */,
 				F0B44F2A1DCB68CB008A54EB /* ScanQRCodeVC.storyboard in Resources */,
@@ -541,7 +521,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -584,7 +564,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -598,6 +578,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2YSL4FU435;
 				INFOPLIST_FILE = QRcode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wrx.QRcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -611,6 +592,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2YSL4FU435;
 				INFOPLIST_FILE = QRcode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wrx.QRcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
